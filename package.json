@@ -1,4 +1,5 @@
 {
+  "homepage":"http://anjalinatikar.github.io/Movies-Website",
   "name": "movies_website",
   "version": "0.1.0",
   "private": true,
@@ -11,7 +12,9 @@
     "react-scripts": "4.0.1",
     "web-vitals": "^0.2.4"
   },
-  "scripts": {
+  "scripts": {    
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
